@@ -8,22 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		3531AF53295AE2C800A823DC /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3531AF51295AE2C800A823DC /* Model.xcdatamodeld */; };
-		3531AF56295AE43B00A823DC /* Sensor+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3531AF54295AE43B00A823DC /* Sensor+CoreDataClass.swift */; };
-		3531AF57295AE43B00A823DC /* Sensor+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3531AF55295AE43B00A823DC /* Sensor+CoreDataProperties.swift */; };
-		3531AF59295AE59500A823DC /* SensorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3531AF58295AE59500A823DC /* SensorData.swift */; };
+		3531AF59295AE59500A823DC /* Sensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3531AF58295AE59500A823DC /* Sensor.swift */; };
 		63F01BB528D44FC400C53A39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F01BB428D44FC400C53A39 /* AppDelegate.swift */; };
 		63F01BB728D44FC400C53A39 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F01BB628D44FC400C53A39 /* SceneDelegate.swift */; };
 		63F01BB928D44FC400C53A39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F01BB828D44FC400C53A39 /* ViewController.swift */; };
 		63F01BBC28D44FC400C53A39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63F01BBA28D44FC400C53A39 /* Main.storyboard */; };
 		63F01BBE28D44FC500C53A39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63F01BBD28D44FC500C53A39 /* Assets.xcassets */; };
 		63F01BC128D44FC500C53A39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63F01BBF28D44FC500C53A39 /* LaunchScreen.storyboard */; };
+		AAC04B78295AE848004FACC9 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC04B77295AE848004FACC9 /* PersistenceManager.swift */; };
+		AAC04B83295AF1B4004FACC9 /* SensorData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC04B81295AF1B4004FACC9 /* SensorData+CoreDataClass.swift */; };
+		AAC04B84295AF1B4004FACC9 /* SensorData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC04B82295AF1B4004FACC9 /* SensorData+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3531AF52295AE2C800A823DC /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		3531AF54295AE43B00A823DC /* Sensor+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sensor+CoreDataClass.swift"; sourceTree = "<group>"; };
-		3531AF55295AE43B00A823DC /* Sensor+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sensor+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		3531AF58295AE59500A823DC /* SensorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorData.swift; sourceTree = "<group>"; };
+		3531AF58295AE59500A823DC /* Sensor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sensor.swift; sourceTree = "<group>"; };
 		63F01BB128D44FC400C53A39 /* GyroData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GyroData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63F01BB428D44FC400C53A39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63F01BB628D44FC400C53A39 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +31,9 @@
 		63F01BBD28D44FC500C53A39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63F01BC028D44FC500C53A39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63F01BC228D44FC500C53A39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAC04B77295AE848004FACC9 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		AAC04B81295AF1B4004FACC9 /* SensorData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SensorData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		AAC04B82295AF1B4004FACC9 /* SensorData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SensorData+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +50,7 @@
 		3531AF4E295AE26B00A823DC /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3531AF58295AE59500A823DC /* SensorData.swift */,
+				3531AF58295AE59500A823DC /* Sensor.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -76,8 +78,9 @@
 		63F01BA828D44FC400C53A39 = {
 			isa = PBXGroup;
 			children = (
-				3531AF54295AE43B00A823DC /* Sensor+CoreDataClass.swift */,
-				3531AF55295AE43B00A823DC /* Sensor+CoreDataProperties.swift */,
+				AAC04B81295AF1B4004FACC9 /* SensorData+CoreDataClass.swift */,
+				AAC04B82295AF1B4004FACC9 /* SensorData+CoreDataProperties.swift */,
+				3531AF51295AE2C800A823DC /* Model.xcdatamodeld */,
 				63F01BB328D44FC400C53A39 /* GyroData */,
 				63F01BB228D44FC400C53A39 /* Products */,
 			);
@@ -94,13 +97,21 @@
 		63F01BB328D44FC400C53A39 /* GyroData */ = {
 			isa = PBXGroup;
 			children = (
-				3531AF51295AE2C800A823DC /* Model.xcdatamodeld */,
+				AAC04B76295AE7E3004FACC9 /* Manager */,
 				3531AF4E295AE26B00A823DC /* Model */,
 				3531AF4F295AE27400A823DC /* View */,
 				3531AF50295AE27D00A823DC /* Controller */,
 				63F01BC228D44FC500C53A39 /* Info.plist */,
 			);
 			path = GyroData;
+			sourceTree = "<group>";
+		};
+		AAC04B76295AE7E3004FACC9 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				AAC04B77295AE848004FACC9 /* PersistenceManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,12 +186,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				63F01BB928D44FC400C53A39 /* ViewController.swift in Sources */,
-				3531AF56295AE43B00A823DC /* Sensor+CoreDataClass.swift in Sources */,
 				63F01BB528D44FC400C53A39 /* AppDelegate.swift in Sources */,
-				3531AF57295AE43B00A823DC /* Sensor+CoreDataProperties.swift in Sources */,
+				AAC04B78295AE848004FACC9 /* PersistenceManager.swift in Sources */,
 				63F01BB728D44FC400C53A39 /* SceneDelegate.swift in Sources */,
+				AAC04B83295AF1B4004FACC9 /* SensorData+CoreDataClass.swift in Sources */,
+				AAC04B84295AF1B4004FACC9 /* SensorData+CoreDataProperties.swift in Sources */,
 				3531AF53295AE2C800A823DC /* Model.xcdatamodeld in Sources */,
-				3531AF59295AE59500A823DC /* SensorData.swift in Sources */,
+				3531AF59295AE59500A823DC /* Sensor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
