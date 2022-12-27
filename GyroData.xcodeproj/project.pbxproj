@@ -16,8 +16,8 @@
 		63F01BBE28D44FC500C53A39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63F01BBD28D44FC500C53A39 /* Assets.xcassets */; };
 		63F01BC128D44FC500C53A39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63F01BBF28D44FC500C53A39 /* LaunchScreen.storyboard */; };
 		AAC04B78295AE848004FACC9 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC04B77295AE848004FACC9 /* PersistenceManager.swift */; };
-		AAC04B83295AF1B4004FACC9 /* SensorData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC04B81295AF1B4004FACC9 /* SensorData+CoreDataClass.swift */; };
-		AAC04B84295AF1B4004FACC9 /* SensorData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC04B82295AF1B4004FACC9 /* SensorData+CoreDataProperties.swift */; };
+		AAC04B87295B1B3E004FACC9 /* Data+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC04B85295B1B3E004FACC9 /* Data+CoreDataClass.swift */; };
+		AAC04B88295B1B3E004FACC9 /* Data+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC04B86295B1B3E004FACC9 /* Data+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +32,8 @@
 		63F01BC028D44FC500C53A39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63F01BC228D44FC500C53A39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAC04B77295AE848004FACC9 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
-		AAC04B81295AF1B4004FACC9 /* SensorData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SensorData+CoreDataClass.swift"; sourceTree = "<group>"; };
-		AAC04B82295AF1B4004FACC9 /* SensorData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SensorData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		AAC04B85295B1B3E004FACC9 /* Data+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+CoreDataClass.swift"; sourceTree = "<group>"; };
+		AAC04B86295B1B3E004FACC9 /* Data+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +78,8 @@
 		63F01BA828D44FC400C53A39 = {
 			isa = PBXGroup;
 			children = (
-				AAC04B81295AF1B4004FACC9 /* SensorData+CoreDataClass.swift */,
-				AAC04B82295AF1B4004FACC9 /* SensorData+CoreDataProperties.swift */,
+				AAC04B85295B1B3E004FACC9 /* Data+CoreDataClass.swift */,
+				AAC04B86295B1B3E004FACC9 /* Data+CoreDataProperties.swift */,
 				3531AF51295AE2C800A823DC /* Model.xcdatamodeld */,
 				63F01BB328D44FC400C53A39 /* GyroData */,
 				63F01BB228D44FC400C53A39 /* Products */,
@@ -185,12 +185,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAC04B87295B1B3E004FACC9 /* Data+CoreDataClass.swift in Sources */,
 				63F01BB928D44FC400C53A39 /* ViewController.swift in Sources */,
 				63F01BB528D44FC400C53A39 /* AppDelegate.swift in Sources */,
 				AAC04B78295AE848004FACC9 /* PersistenceManager.swift in Sources */,
 				63F01BB728D44FC400C53A39 /* SceneDelegate.swift in Sources */,
-				AAC04B83295AF1B4004FACC9 /* SensorData+CoreDataClass.swift in Sources */,
-				AAC04B84295AF1B4004FACC9 /* SensorData+CoreDataProperties.swift in Sources */,
+				AAC04B88295B1B3E004FACC9 /* Data+CoreDataProperties.swift in Sources */,
 				3531AF53295AE2C800A823DC /* Model.xcdatamodeld in Sources */,
 				3531AF59295AE59500A823DC /* Sensor.swift in Sources */,
 			);

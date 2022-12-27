@@ -34,7 +34,6 @@ class PersistenceManager {
             
             managedObject.setValue(sensor.measurementDate, forKey: "measurementDate")
             managedObject.setValue(sensor.sensorName, forKey: "sensorName")
-            managedObject.setValue(sensor.sensorValue, forKey: "sensorValue")
             managedObject.setValue(sensor.measuredTime, forKey: "measuredTime")
             
             do {
@@ -49,7 +48,7 @@ class PersistenceManager {
         }
     }
     
-    func fetchData(request: NSFetchRequest<SensorData>) -> [SensorData] {
+    func fetchData(request: NSFetchRequest<Data>) -> [Data] {
         do {
             let fetchResult = try self.context.fetch(request)
             return fetchResult
@@ -71,8 +70,8 @@ class PersistenceManager {
     }
     
     @discardableResult
-    func deleteAll(request: NSFetchRequest<SensorData>) -> Bool {
-        let request: NSFetchRequest<NSFetchRequestResult> = SensorData.fetchRequest()
+    func deleteAll(request: NSFetchRequest<Data>) -> Bool {
+        let request: NSFetchRequest<NSFetchRequestResult> = Data.fetchRequest()
         let delete = NSBatchDeleteRequest(fetchRequest: request)
         do {
             try self.context.execute(delete)

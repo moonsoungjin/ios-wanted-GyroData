@@ -9,7 +9,6 @@ import Foundation
 
 struct Sensor {
     var measurementDate: String
-    var sensorValue: Double
     var sensorName: String
     var measuredTime: Double
 }
