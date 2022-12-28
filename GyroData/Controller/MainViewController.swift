@@ -15,13 +15,10 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        let gyroData = Sensor(measurementDate: "2022-12-28", sensorName: "Gyro", measuredTime: 60.3)
-//        PersistenceManager.shared.saveData(sensor: gyroData)
         setNavigationBar()
         sensorTableView.dataSource = self
         sensorTableView.register(MainTableViewCell.self, forCellReuseIdentifier: "mainCell")
         self.setSensorTableViewLayout()
-        print(MainViewController.list)
         let request: NSFetchRequest<Data> = Data.fetchRequest()
         let fetchRequest = PersistenceManager.shared.fetchData(request: request)
         PersistenceManager.shared.deleteAll(request: request)
@@ -40,6 +37,7 @@ class MainViewController: UIViewController {
     
     func setNavigationBar() {
         self.navigationItem.title = "목록"
+        self.navigationItem.hidesBackButton = true
         let measurementButton = UIBarButtonItem(title: "측정", style: .plain, target: self, action: #selector(addButton(_:)))
         self.navigationItem.rightBarButtonItem = measurementButton
         let backButton = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
