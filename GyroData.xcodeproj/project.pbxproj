@@ -17,6 +17,7 @@
 		AA50ED59295C1D8700BC26F0 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA50ED58295C1D8700BC26F0 /* MainTableViewCell.swift */; };
 		AA50ED60295C209300BC26F0 /* Data+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA50ED5E295C209300BC26F0 /* Data+CoreDataClass.swift */; };
 		AA50ED61295C209300BC26F0 /* Data+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA50ED5F295C209300BC26F0 /* Data+CoreDataProperties.swift */; };
+		AA50ED63295C567600BC26F0 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA50ED62295C567600BC26F0 /* SecondViewController.swift */; };
 		AAC04B78295AE848004FACC9 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC04B77295AE848004FACC9 /* PersistenceManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		AA50ED58295C1D8700BC26F0 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		AA50ED5E295C209300BC26F0 /* Data+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+CoreDataClass.swift"; sourceTree = "<group>"; };
 		AA50ED5F295C209300BC26F0 /* Data+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		AA50ED62295C567600BC26F0 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		AAC04B77295AE848004FACC9 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +72,7 @@
 				63F01BB428D44FC400C53A39 /* AppDelegate.swift */,
 				63F01BB628D44FC400C53A39 /* SceneDelegate.swift */,
 				3531AF5E295B330200A823DC /* MainViewController.swift */,
+				AA50ED62295C567600BC26F0 /* SecondViewController.swift */,
 				AA50ED58295C1D8700BC26F0 /* MainTableViewCell.swift */,
 			);
 			path = Controller;
@@ -192,6 +195,7 @@
 				63F01BB728D44FC400C53A39 /* SceneDelegate.swift in Sources */,
 				3531AF53295AE2C800A823DC /* Model.xcdatamodeld in Sources */,
 				3531AF59295AE59500A823DC /* Sensor.swift in Sources */,
+				AA50ED63295C567600BC26F0 /* SecondViewController.swift in Sources */,
 				AA50ED61295C209300BC26F0 /* Data+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
