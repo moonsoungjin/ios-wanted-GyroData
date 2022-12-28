@@ -27,7 +27,7 @@ class PersistenceManager {
     
     @discardableResult
     func saveData(sensor: Sensor) -> Bool {
-        let entity = NSEntityDescription.entity(forEntityName: "SensorData", in: self.context)
+        let entity = NSEntityDescription.entity(forEntityName: "Data", in: self.context)
         
         if let entity = entity {
             let managedObject = NSManagedObject(entity: entity, insertInto: self.context)
@@ -38,6 +38,7 @@ class PersistenceManager {
             
             do {
                 try self.context.save()
+                MainViewController.list.append(managedObject)
                 return true
             } catch {
                 print(error.localizedDescription)
