@@ -22,6 +22,20 @@ class MainViewController: UIViewController {
         let request: NSFetchRequest<Data> = Data.fetchRequest()
         let fetchRequest = PersistenceManager.shared.fetchData(request: request)
         PersistenceManager.shared.deleteAll(request: request)
+        
+        func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+            let actions1 = UIContextualAction(style: .normal, title: "Play", handler: { action, view, completionHaldler in
+                print("play")
+                completionHaldler(true)
+            })
+            let actions2 = UIContextualAction(style: .normal, title: "Delete", handler: { action, view, completionHaldler in
+                print("delete")
+                completionHaldler(true)
+            })
+            return UISwipeActionsConfiguration(actions: [actions1, actions2])
+        }
+
+        
     }
     
     func setSensorTableViewLayout() {
@@ -43,12 +57,15 @@ class MainViewController: UIViewController {
         let backButton = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
         backButton.tintColor = .black
         self.navigationItem.backBarButtonItem = backButton
+        
     }
     
     @IBAction func addButton(_ sender: Any) {
         let secondViewController = SecondViewController()
         self.navigationController?.pushViewController(secondViewController, animated: true)
     }
+    
+    
 }
 
 extension MainViewController: UITableViewDataSource {

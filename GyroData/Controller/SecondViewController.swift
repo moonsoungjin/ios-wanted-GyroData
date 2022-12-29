@@ -23,6 +23,7 @@ class SecondViewController: UIViewController {
         let backButton = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
         backButton.tintColor = .black
         self.navigationItem.backBarButtonItem = backButton
+        
     }
     
     @IBAction func saveButton(_ sender: Any) {
@@ -30,5 +31,8 @@ class SecondViewController: UIViewController {
         let gyroData = Sensor(measurementDate: "2022-12-28", sensorName: "Gyro", measuredTime: 60.3)
         PersistenceManager.shared.saveData(sensor: gyroData)
         self.navigationController?.pushViewController(mainViewController, animated: true)
+        
     }
+    
+    
 }
